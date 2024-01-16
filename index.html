@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONSUMO DE API </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styls.css">
+</head>
+<body>
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <table>
+            <tr>
+                <th>ID</th>
+                <td id="id"></td>
+            </tr>
+            <tr>
+                <th>NOMBRE</th>
+                <td id="NOMBRE"></td>
+            </tr>
+            <tr>
+                <th>GMAIL</th>
+                <td id="GMAIL"></td>
+            </tr>
+            <tr>
+                <th>CONSTRASEÑA</th>
+                <td id="CONSTRASEÑA"></td>
+            </tr>
+            <tr>
+                <th>VERIFICAION DE CORREO</th>
+                <td id="VERIFICAIONCORREO"></td>
+            </tr>
+            <tr>
+                <th>FECHA DE CREACION</th>
+                <td id="FECHADECREACION"></td>
+            </tr>
+            <tr>
+                <th>FECHA DE ACTUALIZACION</th>
+                <td id="FECHACTUALIZACION"></td>
+            </tr>
+            <tr>
+                <th>REMENBER TOKEN</th>
+                <td id="TOKEN"></td>
+            </tr>
+            
+        </table>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row" id="root">
+        <div class="col-md-4" id="columna" >
+                <div class="card">
+                    <div class="card-body">
+                        <div class="mt-3">
+                            <label for="" >nombre</label>
+                            <input type="text" id="name" class="form-control">
+                        </div>
+                        <div class="mt-3">
+                            <label for="" >correo</label>
+                            <input type="text" id="gmail" class="form-control">
+                        </div>
+                        <div class="mt-3">
+                            <label for="" >contraseña</label>
+                            <input type="password" id="contraseña" class="form-control">
+                        </div>
+                        <button class="btn btn-primary w-100" id="butonActualizar" onclick="editar()" >actualizar o crear</button>
+                    </div>
+                    
+                </div>
+                <input type="text" class="mt-5"  placeholder="SERCH" id="buscador">
+                
+                
+            </div>
+            <div class="col-md-8">
+                <div class="table-responsive">
+                    <table class="table table-hover" id="tabla">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>NOMBRE</th>
+                                <th>CORREO</th>
+                                <th>ACCIONES</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+        </div>
+    </div>
+</div>
+
+<script src="json.js"></script>
+</body>
+</html>
